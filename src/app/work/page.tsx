@@ -91,7 +91,7 @@ const data = [
 export default function page() {
   return (
     <>
-      <h1 className="text-3xl">my work</h1>
+      <h1 className="text-3xl text-center">my work</h1>
       {data.map((item, index) => (
         <Fragment key={index}>
           <div className="mb-4 border-0 shadow-none m-0">

@@ -39,8 +39,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex justify-center">
-        <main className="flex flex-col justify-center max-w-2xl m-5">
+      <body className="flex justify-center bg-orange-50">
+        <main className="flex flex-col justify-center w-full max-w-2xl m-5">
           <Navbar />
           {children}
           <Footer />
