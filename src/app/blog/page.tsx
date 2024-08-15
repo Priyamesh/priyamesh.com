@@ -43,7 +43,10 @@ async function BlogPost({ post }: any) {
 }
 export default async function BlogPage() {
   let allPosts = getBlogPosts();
-  const posts = allPosts.sort((a, b) => {
+  let visiblePosts = allPosts.filter(
+    (post: any) => post.metadata.visible == "true"
+  );
+  const posts = visiblePosts.sort((a, b) => {
     if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
       return -1;
     }
@@ -70,7 +73,7 @@ export default async function BlogPage() {
           ))}
         </div>
       ) : (
-        <p>no blogs yet.</p>
+        <p className="text-center">no blogs yet.</p>
       )}
     </div>
   );

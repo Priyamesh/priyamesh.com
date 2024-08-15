@@ -10,8 +10,8 @@ const data = [
       summary:
         "Mantys is a modern FP&A SaaS application that helps finance teams manage their budgets, forecasts, and actuals.",
       JobRole: [
-        "Engineered Reports module (Dashboard using metric from UI with all types of charts and table)",
-        "Spearheaded CMDM (Module to collect data from CRM, Billing Software and Contracts and create a master data using Fuzzy logic and Document Parsing).",
+        "Engineered drag-and-drop Reports builder (Dashboard using metric from UI with all types of charts and tables). ",
+        "Spearheaded Customer360 (Module to collect data from CRM, Billing Software and Contracts and create master data using Fuzzy logic and Document Parsing).",
         "Revamped the UI, data transformation pipelines, developed CI/CD pipelines from scratch using React + tailwind, Cube dev and Github actions.",
         "Developed Document Parser with multi-support LLM(aws text-extract, google document-ai, llamaParse) and python.",
         "Integrated AI with the RAG and created agents and automation workflows using AWS Bedrock.",
