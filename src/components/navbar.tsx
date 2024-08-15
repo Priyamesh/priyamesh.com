@@ -1,48 +1,62 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-export default function Navbar() {
-  const pathname = usePathname();
+const navLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Work",
+    href: "/work",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+  // {
+  //   name: "Uses",
+  //   href: "/uses",
+  // },
+];
 
-  const isActive = (path: any) => pathname === path;
+export default function Navbar() {
+  const pathName = usePathname();
 
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <nav
-        className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-        id="nav"
-      >
-        <div className="flex items-center justify-between py-4">
-          <ul className="flex flex-row space-x-6 pr-10">
-            <li
-              className={`cursor-pointer text-base ${
-                isActive("/") ? "text-orange-800 font-semibold" : ""
-              }`}
-            >
-              <Link href="/">Home</Link>
-            </li>
-            <li
-              className={`cursor-pointer text-base ${
-                isActive("/work") ? "text-orange-800 font-semibold" : ""
-              }`}
-            >
-              <Link href="/work">Work</Link>
-            </li>
-            <li
-              className={`cursor-pointer text-base ${
-                isActive("/blog") ? "text-orange-800 font-semibold" : ""
-              }`}
-            >
-              <Link href="/blog">Blog</Link>
-            </li>
-            {/* <li className={`cursor-pointer text-base ${isActive('/guestbook') ? 'text-blue-600 font-bold' : ''}`}>
-          <Link href="/guestbook">Guestbook</Link>
-        </li> */}
-          </ul>
-        </div>
+    <header className="mb-16 flex items-center justify-start space-x-36 mt-10">
+      <Link href="/" className="">
+        <Image
+          src="https://avatars.githubusercontent.com/u/47794863?v=4"
+          alt="Priyamesh's avatar"
+          width={100}
+          height={100}
+          className="rounded-full w-12 h-12"
+        />
+      </Link>
+      <nav className="py-2" id="nav">
+        <ul className="flex space-x-6 px-10">
+          {navLinks.map((link) => {
+            const isActive = pathName === link.href;
+            return (
+              <li key={link.href} className="cursor-pointer text-base">
+                <Link
+                  href={link.href}
+                  className={
+                    isActive ? "text-orange-700 font-semibold" : "text-black"
+                  }
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
-    </aside>
+    </header>
   );
 }
