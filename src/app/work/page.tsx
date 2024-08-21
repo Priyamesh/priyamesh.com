@@ -23,22 +23,6 @@ const data = [
     },
   },
   {
-    title: "Luru - Outcome Based AI SDR Agency",
-    description: "Backend Developer",
-    duration: "Aug 2023 - Dec 2023",
-    link: "https://www.luru.app/",
-    content: {
-      summary:
-        "AI SDR platform. Automate lead generation, improve conversion rates, and boost sales pipeline. Ideal for SDR and BDR teams. More than your regular SDR/BDR agency",
-      JobRole: [
-        "Optimised the search API, resulting in improvement in search relevance multiple CRM integration(Salesforce, Hubspot and Pipedrive).",
-        "Implemented Slack integration for  Slack help commands and user connect/disconnet notifications.",
-        "Enhanced various APIs and fixed issues to enhance the overall user experience.",
-      ],
-      technologies: "Django",
-    },
-  },
-  {
     title: "AlgoScale - AI Consulting and Data Analytics Solutions",
     description: "Python Developer",
     duration: "Apr 2023 - Aug 2023",
