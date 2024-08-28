@@ -10,16 +10,17 @@ const data = [
       summary:
         "Mantys is a modern FP&A SaaS application that helps finance teams manage their budgets, forecasts, and actuals.",
       JobRole: [
-        "Engineered drag-and-drop Reports builder (Dashboard using metric from UI with all types of charts and tables). ",
-        "Spearheaded Customer360 (Module to collect data from CRM, Billing Software and Contracts and create master data using Fuzzy logic and Document Parsing).",
-        "Revamped the UI, data transformation pipelines, developed CI/CD pipelines from scratch using React + tailwind, Cube dev and Github actions.",
-        "Developed Document Parser with multi-support LLM(aws text-extract, google document-ai, llamaParse) and python.",
-        "Integrated AI with the RAG and created agents and automation workflows using AWS Bedrock.",
+        "Engineered drag-and-drop Reports builder (Dashboard using metric from UI with all types of charts and tables).  ",
+        "Spearheaded Customer360 (Module to collect data from CRM, Billing Software, and Contracts and create master data using Fuzzy logic and Document Parsing).",
+        "Revamped the UI, data transformation pipelines, and CI/CD pipelines from scratch using React + tailwind, Cube dev, and GitHub actions.",
+        "Built batch jobs for loading and transforming data using AWS Batch Job.",
+        "Constructed a multi-LLM support Document Parser leveraging advanced technologies like LlamaParse, AWS Extract, and Google Document AI, which reduced time from days to minutes while processing over 3000 documents monthly.",
+        "Developed a Generative AI based system for parsing unstructured documents using AWS Bedrock and Google generative AI reducing cost by eliminating Vellum services.",
         "Managed a team of 3 developers ensuring code quality, and facilitating effective communication.",
       ],
 
       technologies:
-        "React, Next.js, Tailwind CSS, Node.js, Express, PostgreSQL, AWS, Docker and Cube.dev",
+        "React, Next.js, Tailwind CSS, Node.js, Python, FastApi, Express, PostgreSQL, AWS, Docker and Cube.dev",
     },
   },
   {
@@ -50,8 +51,9 @@ const data = [
         "Developed a centralized lead-capturing system from various platforms to the external CRM portal.",
         "Created low-level design and APIs for user profile service and various dynamic landing pages.",
         "Upgraded conventional login mechanism to popup login including social logins that resulting in 52% rise in signups.",
+        "Designed the courses, homepage, and enterprise landing page backend for dynamic content rendering and lead flowing to CRM. Impact: i. 38% increase in lead,  ii. saved a significant time when changing contents.",
       ],
-      technologies: "Django, Python",
+      technologies: "Django, Python, Javascript, Postgres",
     },
   },
   {
@@ -66,6 +68,7 @@ const data = [
         "Contributed in Automating web application resulting in reduction in time of testing a test case from 8 to 3 min.",
         "Automated 60+ forms which is 25% of total forms available in web application.",
         "Carried out automation regression testing of 1100+ test cases and failure analysis of required test cases.",
+        "Got experience with software development frameworks such as Scrum, Agile, and ALM management.",
       ],
       technologies: "Java, Selenium, SQL",
     },

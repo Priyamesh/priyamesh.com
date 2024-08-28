@@ -1,3 +1,4 @@
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import Image from "next/image";
 
 export default function SocialLinks() {
@@ -9,12 +10,12 @@ export default function SocialLinks() {
           target="_blank"
           rel="noreferrer"
         >
-          <Image src="/Linkedin.svg" alt="LinkedIn" width={20} height={20} />
+          <LinkedInIcon className="w-6 h-6 text-slate-800" />
         </a>
       </li>
       <li>
         <a href="https://github.com/Priyamesh" target="_blank" rel="noreferrer">
-          <Image src="/github.svg" alt="Github" width={20} height={20} />
+          <GitHubIcon className="w-5 h-5 text-slate-800" />
         </a>
       </li>
       <li>
