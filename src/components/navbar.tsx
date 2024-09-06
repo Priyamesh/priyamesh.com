@@ -28,8 +28,8 @@ export default function Navbar() {
   const pathName = usePathname();
 
   return (
-    <header className="mb-16 flex items-center justify-start space-x-36 mt-10">
-      <Link href="/" className="">
+    <header className="flex w-full max-w-3xl mx-auto px-4 my-10">
+      <Link href="/">
         <Image
           src="https://avatars.githubusercontent.com/u/47794863?v=4"
           alt="Priyamesh's avatar"
@@ -38,8 +38,8 @@ export default function Navbar() {
           className="rounded-full w-12 h-12"
         />
       </Link>
-      <nav className="py-2" id="nav">
-        <ul className="flex space-x-6 px-10">
+      <nav className="flex flex-1 justify-center items-center h-12" id="nav">
+        <ul className="flex gap-8">
           {navLinks.map((link) => {
             const isActive = pathName === link.href;
             return (

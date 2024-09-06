@@ -39,12 +39,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex justify-center bg-orange-50">
-        <main className="flex flex-col justify-center w-full max-w-2xl m-5">
-          <Navbar />
-          {children}
-          <Footer />
+      <body className="flex flex-col min-h-screen justify-between bg-orange-50 ">
+        <Navbar />
+        <main className="flex flex-col flex-1 justify-center ">
+          <section className="flex flex-col flex-1 p-4 w-full max-w-3xl mx-auto">
+            {children}
+          </section>
         </main>
+        <Footer />
       </body>
     </html>
   );
