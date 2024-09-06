@@ -4,7 +4,7 @@ const data = [
   {
     title: "Mantys - FP&A SaaS Tool",
     description: "Full Stack engineer",
-    duration: "Jan 2024 - Present",
+    duration: "Aug 2023 - Present",
     link: "https://mantys.io",
     content: {
       summary:
