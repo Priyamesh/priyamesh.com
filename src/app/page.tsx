@@ -13,10 +13,10 @@ export default function Home() {
         <p className="text-slate-600">
           Full-stack developer from India, currently working at{" "}
           <a
-            href="https://www.mantys.io/"
+            href="https://fundflo.ai/"
             className="text-yellow-900 underline"
           >
-            Mantys YC(23).
+            Fundflo.
           </a>{" "}
           I love building tech and sharing my learning with community.
         </p>
