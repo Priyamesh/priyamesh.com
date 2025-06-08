@@ -2,9 +2,25 @@ import React, { Fragment } from "react";
 
 const data = [
   {
+    title: "Fundflo",
+    description: "Senior Software Engineer",
+    duration: "Nov 2024 - Present",
+    link: "https://fundflo.ai/",
+    content: {
+      summary:
+        "Automated, Simple & AI-Driven Dealer Management, Accounts Receivable, Accounts Payable and Treasury Management Platform",
+      JobRole: [
+        "W.I.P",
+        ],
+
+      technologies:
+        "Javascript, Node.js, Express, PostgreSQL",
+    },
+  },
+  {
     title: "Mantys - FP&A SaaS Tool",
     description: "Full Stack engineer",
-    duration: "Aug 2023 - Present",
+    duration: "Aug 2023 - Sept 2024",
     link: "https://mantys.io",
     content: {
       summary:
