@@ -1,6 +1,7 @@
-import Education from "./home/education";
-import SocialLinks from "./home/socialLinks";
-import Skills from "./home/skills";
+import Education from "../components/Education";
+import Skills from "../components/Skills";
+import SocialLinks from "../components/SocialLinks";
+
 
 export default function Home() {
   return (

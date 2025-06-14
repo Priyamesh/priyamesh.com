@@ -1,5 +1,5 @@
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
-import Image from "next/image";
+
+import { GitHubIcon, LinkedInIcon } from "./icons";
 
 export default function SocialLinks() {
   return (
@@ -24,7 +24,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noreferrer"
         >
-          <Image src="/leetcode.svg" alt="Leetcode" width={20} height={20} />
+          <img src="/leetcode.svg" alt="Leetcode" width={20} height={20} />
         </a>
       </li>
     </ul>

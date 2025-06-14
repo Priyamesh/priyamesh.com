@@ -10,7 +10,7 @@ const data = [
       summary:
         "Automated, Simple & AI-Driven Dealer Management, Accounts Receivable, Accounts Payable and Treasury Management Platform",
       JobRole: [
-        "W.I.P",
+        "Building Fundflo ...",
         ],
 
       technologies:
@@ -91,7 +91,7 @@ const data = [
   },
 ];
 
-export default function page() {
+export default function Work() {
   return (
     <>
       <h1 className="text-3xl text-center">my work</h1>

@@ -1,13 +1,7 @@
-import Link from "next/link";
-import { formatDate } from "@/lib/date";
-import { getBlogPosts } from "../db/blog";
-// import ViewCounter from "../view-counter";
+import { Link } from "react-router-dom";
+import { formatDate } from "../utils/date";
 
-export const metadata = {
-  title: "Blog",
-};
-
-async function BlogPost({ post }: any) {
+async function BlogPost({ post }) {
   return (
     <article
       key={post._id}
@@ -41,10 +35,11 @@ async function BlogPost({ post }: any) {
     </article>
   );
 }
-export default async function BlogPage() {
-  let allPosts = getBlogPosts();
+
+export default async function Blog() {
+  let allPosts = [];
   let visiblePosts = allPosts.filter(
-    (post: any) => post.metadata.visible == "true"
+    (post) => post.metadata.visible == "true"
   );
   const posts = visiblePosts.sort((a, b) => {
     if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
@@ -57,9 +52,7 @@ export default async function BlogPage() {
     <div className="">
       <div className="flex flex-col">
         <div className="flex-1 space-y-2">
-          <h1 className="inline-block text-lg font-semibold tracking-tight text-gray-700 lg:text-xl">
-            Blog
-          </h1>
+          <h1 className="text-3xl text-center">my blogs</h1>
           <p className="text-base text-gray-500">
             A collection of thoughts, ideas, and projects.
           </p>
@@ -68,7 +61,7 @@ export default async function BlogPage() {
       <hr className="my-4" />
       {posts?.length ? (
         <div className="grid gap-4">
-          {posts.map((post: any, idx: any) => (
+          {posts.map((post, idx) => (
             <BlogPost post={post} key={idx} />
           ))}
         </div>
